@@ -67,7 +67,14 @@ const Home: FC<HomeProps> = ({ games, error }) => {
         </Section>
         <Section className="w-full mb-5">
           <div className="w-full h-80 overflow-hidden mx-auto relative">
-            <Image src={banner} width={1280} height={720} layout="fixed" />
+            <Image
+              src={banner}
+              width={1280}
+              height={720}
+              layout="fixed"
+              priority
+              alt="failed to load"
+            />
             <div className="absolute bottom-20 left-10 text-slate-100 max-w-md">
               <h1 className="text-2xl font-semibold">
                 Get Free Games & In-Game Loot! Find, track, and collect the best

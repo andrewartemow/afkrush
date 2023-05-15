@@ -17,14 +17,14 @@ const AboutPage = () => {
           <br />
           <br />
           Our mission is to provide gamers with the opportunity to experience
-          the latest games and DLC's. We are constantly updating our website
-          with new giveaways and working hard to make sure our community has the
-          best possible experience.
+          the latest games and DLCs. We are constantly updating our website with
+          new giveaways and working hard to make sure our community has the best
+          possible experience.
           <br />
           <br />
           Thank you for visiting our website, and we hope you enjoy our
           giveaways as much as we enjoy providing them to you. If you have any
-          questions or feedback, please don't hesitate to contact us.
+          questions or feedback, please dont hesitate to contact us.
         </p>
       </Container>
     </PageWrapper>

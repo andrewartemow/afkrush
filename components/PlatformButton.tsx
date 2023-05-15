@@ -16,7 +16,6 @@ const PlatformButton: FC<PlatformButtonProps> = ({
 
   return (
     <button
-      key={platform.name}
       className={`px-4 py-2 bg-slate-300 rounded m-2 hover:bg-slate-200 ${
         platform.isActive && router.asPath !== '/' ? 'bg-slate-400' : ''
       } whitespace-nowrap`}

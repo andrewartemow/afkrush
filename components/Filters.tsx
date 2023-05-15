@@ -45,6 +45,7 @@ const Filters: FC = () => {
     <div className="mx-auto flex w-full overflow-x-scroll">
       {platforms.map((platform) => (
         <PlatformButton
+          key={platform.name}
           platform={platform}
           onSetActivePlatformHandler={setActivePlatformHandler}
         />
