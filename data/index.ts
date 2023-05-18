@@ -20,3 +20,5 @@ export const filtersPlatforms = [
 ];
 export const filtersTypes = ['game', 'loot', 'beta'];
 export const filtersDateValuePopularity = ['date', 'value', 'popularity'];
+
+export const maxMobileWidth = 640;

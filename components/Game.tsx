@@ -1,18 +1,31 @@
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 
 import { IGame } from '../types';
 
+import { maxMobileWidth } from '../data';
+
 interface GameProps {
   game: IGame;
 }
 
 const Game: FC<GameProps> = ({ game }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= maxMobileWidth) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
     <Link href={`/giveaway/${game.id}`}>
-      <div className="m-3 cursor-pointer bg-white rounded-md overflow-hidden h-80 w-80 relative hover:scale-105 hover:shadow-md transition-all">
+      <div
+        className={`m-3 cursor-pointer bg-white rounded-md overflow-hidden h-80 ${
+          isMobile ? 'w-96' : 'w-80'
+        } relative hover:scale-105 hover:shadow-md transition-all`}
+      >
         <Image
           src={game.image}
           height={140}

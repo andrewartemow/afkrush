@@ -7,7 +7,11 @@ interface PageWrapperProps {
 
 const PageWrapper: FC<PageWrapperProps> = ({ children, className }) => {
   return (
-    <div className={`min-h-screen px-5 py-16 ${className ? className : ''}`}>
+    <div
+      className={`min-h-screen px-5 py-16 overflow-hidden ${
+        className ? className : ''
+      }`}
+    >
       {children}
     </div>
   );

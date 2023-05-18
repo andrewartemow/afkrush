@@ -12,8 +12,8 @@ interface GiveAwayDetailsProps {
 const GiveAwayDetails: FC<GiveAwayDetailsProps> = ({ game }) => {
   return (
     <>
-      <div className="flex justify-between items-center mb-10">
-        <div className="flex">
+      <div className="flex justify-between items-center mb-10 max-[640px]:flex-wrap max-[640px]:justify-center">
+        <div className="flex max-[640px]:flex-wrap max-[640px]:justify-center">
           <Image
             src={game.image}
             height={140}
@@ -24,9 +24,9 @@ const GiveAwayDetails: FC<GiveAwayDetailsProps> = ({ game }) => {
             blurDataURL={game.image}
             className="rounded-2xl"
           />
-          <div className="ml-4">
+          <div className="ml-4 max-[640px]:my-4">
             <h2 className="font-semibold mb-2">{game.title}</h2>
-            <p className="mb-2">
+            <p className="mb-2 max-[640px]:text-center">
               <span
                 className={`text-sm p-1 rounded ${
                   game.type === 'DLC' ? 'bg-purple-300' : 'bg-green-300'
@@ -36,7 +36,7 @@ const GiveAwayDetails: FC<GiveAwayDetailsProps> = ({ game }) => {
               </span>{' '}
               | <span className="text-sm">{game.platforms}</span>
             </p>
-            <p>
+            <p className="max-[640px]:text-center">
               $0.00{' '}
               {game.worth !== 'N/A' && (
                 <span className="text-sm text-slate-600 line-through">
