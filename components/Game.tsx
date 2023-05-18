@@ -12,7 +12,7 @@ interface GameProps {
 const Game: FC<GameProps> = ({ game }) => {
   return (
     <Link href={`/giveaway/${game.id}`}>
-      <div className="m-3 cursor-pointer bg-white rounded-md overflow-hidden h-80 w-80 relative hover:scale-105 hover:shadow-md transition-all max-[640px]:w-full max-[640px]:h-[400px]">
+      <div className="m-3 cursor-pointer bg-white rounded-md overflow-hidden h-80 w-80 relative hover:scale-105 hover:shadow-md transition-all max-[640px]:w-96 max-[640px]:h-[370px]">
         <Image
           src={game.image}
           height={140}
