@@ -9,7 +9,7 @@ const ContactPage: FC = () => {
     <PageWrapper className="pt-20">
       <Container>
         <Title className="mb-4">Contact US</Title>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center flex-wrap">
           <p className="bg-slate-300 inline px-5 py-2 m-2 rounded">
             <span className="font-semibold text-slate-600 text-center mb-4">
               Email:{' '}
